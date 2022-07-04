@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgray;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  background-color: orange;
+  margin: 0;
+  width: 100%;
+}
+
+main {
+  padding: 30px;
+}
+
+.encabezado {
+  width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: right;
+}
+
+.textologo {
+  width: 90%;
+  font-family: "Shadows Into Light", cursive;
+  text-align: justify;
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+}
+
+.logo img {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu div {
+  color: black;
+  width: 20%;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+a:active {
+  color: brown;
+}
+div.texto {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  text-align: justify;
+}
+div.textoadopta {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  text-align: justify;
+  padding: 1%;
+}
+
+/* footer */
+
+footer {
+  font-family: "Shadows Into Light", cursive;
+  background-color: orange;
+  padding: 3%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer div {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2.footer {
+  font-size: 30px;
+}
+
+p.footer {
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.linksupport {
+  text-align: center;
+}
+
+.fotosupport {
+  display: inline-block;
+}
+
+.fotosupport img {
+  height: 30%;
+  width: 100%;
+}
+
+img.icon {
+  width: 10%;
+  height: auto;
+}
+
+p.tel {
+  font-size: 22px;
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+}
+
+.linea {
+  background: orange;
+  height: 5px;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.galeriaimag {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px, 0;
+  overflow: hidden;
+}
+.galeriaimag > a {
+  display: block;
+  position: relative;
+
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.galeriaimag img {
+  width: 100%;
+  vertical-align: top;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.galeriaimag a:hover img {
+  filter: blur(2px);
+  transform: rotate(10deg) scale(1.3);
+}
+
+.linea2 {
+  background: orange;
+  height: 5px;
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+
+div.galeria {
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  align-items: center;
+}
+div.galeria img {
+  width: 100%;
+  height: 50%;
+}
+div.galeria:hover {
+  border: 1px solid #777;
+}
+div.desc {
+  padding: 15px;
+  text-align:center;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  font-size: 15px;
+}
+.botontienda{
+  width: 100%;
+}
+.texto {
+  margin-right: 20px;
+}
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.adopta {
+  
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 4%; 
+}
+.adopta img {
+  width: 70%;
+  height: 450px;  
+}
+
+.resalta {
+  font-weight: bold;
+}
+
+.nosotros {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+  margin-right: 7 0px;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    'header header header'
+    'nav nav nav'
+    'main main main' 
+    'footer footer  footer';
+}
+
+header{grid-area: header;}
+nav{grid-area: nav;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+.grillaus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 20px;
+    grid-gap: 40px;
+    padding: 40px, 0;
+    overflow: hidden;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: justify;
+  }
+
+
+.imglogo img {
+  position: relative;
+  overflow: hidden;
+}
+.container_contacto{
+  display: flex;
+  padding: 2%;
+}
+.container_contacto div{
+margin: 2%;
+
+}
+
+/* renposive */
+@media screen and (max-width: 600px) {
+  .textologo {
+    margin-left: 0%;
+    font-size: 60%;
+  }
+  .logo img {
+    width: 80%;
+    height: auto;
+    margin-left: 5%;
+  }
+  .menu div {
+    font-size: 16px;
+  }
+  .texto p {
+    font-size: 20px;
+  }
+
+  img.icon {
+    width: 10px;
+    height: auto;
+  }
+
+  /* footer */
+
+  footer div {
+    width: 100%;
+  }
+
+  p.footer {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .fotosupport img {
+    height: auto;
+    width: 30%;
+  }
+
+  .adopta img {
+    height: auto;
+  }
+
+  .galeriaimag {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .galeriaimag img {
+    height: auto;
+  }
+
+  #grilla {   
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2%;
+    margin: 0; 
+    font-size: 20px;
+    text-align: justify;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    padding: 0;
+    margin: 0;
+  }
+  .flex-container div{
+    width: 100%;
+    height: auto;
+  }
+  div.textoadopta {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+}
+@media screen and (max-width:768px) {
+
+  .galeriaimag {
+    
+    grid-template-columns: repeat(2, minmax(30%, 1fr));
+    flex-wrap: wrap;
+   
+  }
+  .galeriaimag img {
+    width: 100%;
+    vertical-align: top;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+}
