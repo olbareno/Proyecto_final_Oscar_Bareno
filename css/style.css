@@ -284,11 +284,15 @@ footer{grid-area: footer;}
 }
 .container_contacto{
   display: flex;
-  padding: 2%;
+  padding: 0%;
+  
 }
 .container_contacto div{
 margin: 2%;
 
+}
+.form{
+  width: 100%;
 }
 
 /* renposive */
