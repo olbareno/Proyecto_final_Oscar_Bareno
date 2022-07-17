@@ -8,10 +8,30 @@
 
 body {
     background-color: lightgray;
+    
 }
 
 header {
     width: 100%;
+    .textologo {
+        width: 90%;
+        font-family: "Shadows Into Light", cursive;
+        text-align: justify;
+        margin-top: 5%;
+        font-size: 20px;
+    }
+    
+    .logo {
+        margin: 0;
+        padding: 0;
+        width: 30%;
+        img {
+            width: 80%;
+            height: auto;
+            margin-left: 10%;
+        }
+    }
+    
 }
 
 nav {
@@ -22,34 +42,33 @@ nav {
 
 main {
     padding: 30px;
-}
-
-.encabezado {
-    width: 100%;
-    margin: 20px auto;
-    padding: 15px;
-    display: flex;
-    justify-content: right;
-}
-
-.textologo {
-    width: 90%;
-    font-family: "Shadows Into Light", cursive;
-    text-align: justify;
-    margin-top: 5%;
-    font-size: 20px;
-}
-
-.logo {
-    margin: 0;
-    padding: 0;
-    width: 30%;
-    img {
-        width: 80%;
-        height: auto;
-        margin-left: 10%;
+    .encabezado {
+        width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+        display: flex;
+        justify-content: right;
     }
+    
 }
+
+// .encabezado {
+//     width: 100%;
+//     margin: 20px auto;
+//     padding: 15px;
+//     display: flex;
+//     justify-content: right;
+// }
+
+// .textologo {
+//     width: 90%;
+//     font-family: "Shadows Into Light", cursive;
+//     text-align: justify;
+//     margin-top: 5%;
+//     font-size: 20px;
+// }
+
+
 
 // .logo img {
 //     width: 80%;

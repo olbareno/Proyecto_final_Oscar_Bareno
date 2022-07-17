@@ -11,6 +11,23 @@ body {
 header {
   width: 100%;
 }
+header .textologo {
+  width: 90%;
+  font-family: "Shadows Into Light", cursive;
+  text-align: justify;
+  margin-top: 5%;
+  font-size: 20px;
+}
+header .logo {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+}
+header .logo img {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+}
 
 nav {
   background-color: orange;
@@ -21,32 +38,12 @@ nav {
 main {
   padding: 30px;
 }
-
-.encabezado {
+main .encabezado {
   width: 100%;
   margin: 20px auto;
   padding: 15px;
   display: flex;
   justify-content: right;
-}
-
-.textologo {
-  width: 90%;
-  font-family: "Shadows Into Light", cursive;
-  text-align: justify;
-  margin-top: 5%;
-  font-size: 20px;
-}
-
-.logo {
-  margin: 0;
-  padding: 0;
-  width: 30%;
-}
-.logo img {
-  width: 80%;
-  height: auto;
-  margin-left: 10%;
 }
 
 .menu {
