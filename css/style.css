@@ -77,16 +77,13 @@ main .encabezado {
   color: brown;
 }
 
-div.texto {
+div.texto, div.textoadopta {
   font-family: "Shadows Into Light", cursive;
   font-size: 30px;
   text-align: justify;
 }
 
 div.textoadopta {
-  font-family: "Shadows Into Light", cursive;
-  font-size: 30px;
-  text-align: justify;
   padding: 1%;
 }
 
@@ -213,7 +210,7 @@ div.desc {
   width: 100%;
 }
 
-.texto {
+.texto, div.textoadopta {
   margin-right: 20px;
 }
 
@@ -320,7 +317,7 @@ footer {
   .menu div {
     font-size: 16px;
   }
-  .texto p {
+  .texto p, div.textoadopta p {
     font-size: 20px;
   }
   img.icon {

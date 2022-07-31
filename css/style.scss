@@ -1,4 +1,21 @@
 @import "variables";
+// mapa
+$estilos:(
+    color:lightgray,
+    fuente:20px,
+    justificacion:center);
+
+// mixins
+@mixin flex_style {
+    font-family: $fontMain;
+    background-color: $colorBackground;
+    padding: 3%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+
 
 * {
     box-sizing: border-box;
@@ -6,8 +23,9 @@
     padding: 0;
 }
 
+
 body {
-    background-color: lightgray;
+    background-color: map-get($estilos, color);
     
 }
 
@@ -18,7 +36,7 @@ header {
         font-family: "Shadows Into Light", cursive;
         text-align: justify;
         margin-top: 5%;
-        font-size: 20px;
+        font-size: map-get($estilos, fuente);
     }
     
     .logo {
@@ -163,21 +181,14 @@ div.texto {
 }
 
 div.textoadopta {
-    font-family: $fontMain;
-    font-size: 30px;
-    text-align: justify;
-    padding: 1%;
+@extend .texto;
+padding: 1%;
 }
 
 /* footer */
 
 footer {
-    font-family: $fontMain;
-    background-color: $colorBackground;
-    padding: 3%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    @include flex_style;
     div {
         width: 33%;
         display: flex;
@@ -453,6 +464,8 @@ footer {
 .d-block {
     padding: 10%;
 }
+// maps
+
 
 /* renposive */
 @media screen and (max-width: 600px) {
