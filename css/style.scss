@@ -245,8 +245,9 @@ div.desc {
     width: 100%;
 }
 
-.texto {
+.textocontacto {
     margin-right: 20px;
+    width: 50%;
 }
 
 .flex-container {
@@ -332,17 +333,19 @@ footer {
 .container_contacto {
     display: flex;
     padding: 0%;
+    
     div {
         margin: 2%;
     
     }
+    img{
+        width: 100%;
+    }
+   
 
 }
 
-// .container_contacto div {
-//     margin: 2%;
 
-// }
 
 .form {
     width: 100%;
